@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto Condensed", sans-serif;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+            background: url("https://cdn.pixabay.com/photo/2016/11/29/03/59/dark-1867202_1280.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        section>div{
+            width: 70%;
+            height: 60vh;
+            background-color: rgba(67, 170, 139, 0.301);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 0 40px 40px 0;
+            display: flex;
+            
+            
+        }
+
+        #left, #right{
+            width: 49%;
+            height: 60vh;
+            /* display: inline-block; */
+
+        }
+
+        #right{
+           
+            padding: 40px;           
+        }
+        input{
+            width: 90%;
+            margin: 15px 0;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 2px solid #d2c6c6da;
+            line-height: 30px;
+            color: #fff;
+            
+        }
+        h1{
+            font-weight: 600;
+            font-size: 35px;
+            color: aliceblue;
+        }
+
+        button{
+            border: 0;
+            outline: 0;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            background-color: rgba(70, 168, 206, 0.869);
+            color: #fff;
+            margin-right: 50px;
+            cursor: pointer;
+
+        }
+        a{
+            color: #d2c6c6da;
+        }
+
+        ::placeholder{
+            color: #d2c6c6da;
+        }
+        ::selection{
+            color: azure;
+            background-color: burlywood;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <div id="left">
+                <img src="pen-4337524_1280.jpg" alt="" width="100%" height="100%">
+
+            </div>
+            <div id="right">
+                <h1>Create Account</h1>
+                <form action="">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email address">
+                    <input type="tel" name="" id="" placeholder="Phone Number-Optional">
+                    <input type="password" name="" id="" placeholder="Enter Password">
+                    <input type="password" name="" id="" placeholder="Confirm Password"><br><br>
+                    <button>Signup Now</button>
+                    <a href="#">I have an account</a>
+
+                </form>
+                
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
